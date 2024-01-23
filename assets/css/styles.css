@@ -8,7 +8,7 @@ body {
     left: 0;
     bottom: 0;
     padding: 12px;
-    width: 300px;
+    width: 320px;
 }
 
 .sidebar-navigation {
@@ -25,11 +25,11 @@ body {
 }
 
 .sidebar-navigation .logo img {
-    width: 80px;
+    width: 100px;
 }
 
 .sidebar nav ul {
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 0 20px 10px 20px;
 }
 
@@ -45,11 +45,63 @@ body {
     font-family: "DM-sans", sans-serif;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .sidebar nav ul li a svg {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     fill: #b3b3b3;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4px 8px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.library-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.library .library-content .library-button {
+    display: flex;
+    margin-right: 10px;
+    padding: 20px 10px;
+    align-items: center;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.library-button .lb-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.library .library-content .plus-icon {
+    padding-top: 5px;
+    margin: 24px 10px;
 }
