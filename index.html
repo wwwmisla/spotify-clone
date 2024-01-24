@@ -2,15 +2,22 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
     <title>Spotify – Web player: música para todas as pessoas</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/vars.css">
+    <link rel="stylesheet" href="./assets/css/sidebar-footer.css">
+    <link rel="stylesheet" href="./assets/css/main-content.css">
+    <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
         integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <!-- Favicon -->
     <link rel="icon" sizes="32x32" type="image/png" href="./assets/img/favicon/favicon32.b64ecc03.png">
     <link rel="icon" sizes="16x16" type="image/png" href="./assets/img/favicon/favicon16.1c487bff.png">
     <link rel="icon" href="./assets/img/favicon/favicon.0f31d2ea.ico">
@@ -18,7 +25,9 @@
 </head>
 
 <body>
+    <!-- Sidebar -->
     <div class="sidebar">
+        <!-- Section: Nav -->
         <nav class="sidebar-navigation">
             <div class="logo">
                 <a href="">
@@ -29,7 +38,7 @@
                 <li>
                     <a href="">
                         <span>
-                            <svg data-encore-id="icon" role="img" class="home-icon" viewBox="0 0 24 24" fill="#b3b3b3">
+                            <svg data-encore-id="icon" role="img" class="home-icon" viewBox="0 0 24 24">
                                 <path
                                     d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z">
                                 </path>
@@ -42,7 +51,7 @@
                     <a href="">
                         <span>
                             <svg data-encore-id="icon" role="img" aria-hidden="true" class="search-icon"
-                                viewBox="0 0 24 24" fill="#b3b3b3">
+                                viewBox="0 0 24 24">
                                 <path
                                     d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z">
                                 </path>
@@ -54,11 +63,12 @@
             </ul>
         </nav>
 
+        <!-- Section: Library -->
         <div class="library">
             <div class="library-content">
                 <button class="library-button">
                     <span>
-                        <svg class="lb-icon book-icon" fill="#b3b3b3">
+                        <svg class="lb-icon book-icon">
                             <path
                                 d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
                             </path>
@@ -67,8 +77,7 @@
                     <span>Sua biblioteca</span>
                 </button>
                 <span id="plus-icon">
-                    <svg class="lb-icon plus-icon"
-                        fill="#b3b3b3">
+                    <svg class="lb-icon plus-icon">
                         <path
                             d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z">
                         </path>
@@ -106,20 +115,56 @@
                 </section>
             </div>
 
-            <div class="cookies">
-                <a href="">Cookies</a>
+            <div class="links">
+                <a class="link-cookies" href="">Legal</a>
+                <a class="link-cookies" href="">Centro de Privacidade</a>
+                <a class="link-cookies" href="">Política de Privacidade</a>
+                <a class="link-cookies" href="">Cookies</a>
+                <a class="link-cookies" href="">Sobre anúncios</a>
+                <a class="link-cookies" href="">Acessibilidade</a>
+                <a class="link-cookies" href="">Notice at Collection</a>
+                <a class="link-cookies ypc" href="">
+                    Your Privacy Choices
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 30 15" class="ypc-icon"><path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule: evenodd; clip-rule: evenodd; fill: rgb(255, 255, 255);"></path><path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule: evenodd; clip-rule: evenodd; fill: rgb(0, 102, 255);"></path><path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill: rgb(255, 255, 255);"></path><path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill: rgb(0, 102, 255);"></path></svg>
+                </a>
+                <div class="link-main">
+                    <a class="link-cookies" href="">Cookies</a>
+                </div>
             </div>
 
             <div class="languages">
                 <button class="languages-button">
                     <span>
-                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="language-icon" fill="#fff"><path d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z"></path></svg>
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="language-icon"><path d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z"></path></svg>
                     </span>
                     <span class="languages-text">Português do Brasil</span>
                 </button>
             </div>
         </div>
     </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header-navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./assets/img/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./assets/img/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                <div class="header-search">
+                    <img src="./assets/img/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                </div>
+                <div class="header-login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
 
     <footer class="disclaimer-premium">
         <div class="text">
