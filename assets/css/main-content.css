@@ -3,11 +3,27 @@ body {
     overflow: hidden;
 }
 
-.main-container {
+/* main {
+    padding-top: 2px;
+    margin-left: 312px;
     max-width: 80vw;
     height: 100vh;
+} */
+
+.main-container {
+    padding-top: 2px;
     margin-left: 312px;
-    margin-top: 12px;
+    max-width: 80vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+
+.main-container:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
 }
 
 .header-navigation {
@@ -16,8 +32,11 @@ body {
     align-items: center;
     padding: 16px;
     margin: 10px;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     background-color: var(--color-black-two);
+    position: relative;
+    z-index: 1;
 }
 
 .header-navigation .navigation {
@@ -82,6 +101,12 @@ body {
     overflow: hidden;
     white-space: nowrap;
     outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.header-search:hover {
+    border: 1px solid var(--color-white);
 }
 
 .header-login .subscribe {
@@ -94,6 +119,7 @@ body {
 }
 
 .header-login .subscribe:hover {
+    transform: scale(1.04);
     color: var(--color-white);
 }
 
@@ -109,5 +135,47 @@ body {
 }
 
 .header-login .login:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
+}
+
+/* Main Playlist */
+.playlist-container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(var(--color-black-three), var(--color-black-two) 100%);
+    overflow: auto;
+    margin: -20px 10px 0 10px;
+    position: relative;
+    z-index: -1;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: var(--color-white);
+    height: 468px;
+}
+
+#result-playlists {
+    margin: 24px;
+}
+
+.playlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playlist #greeting {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.playlist .session {
+    color: var(--color-gray);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.playlist .session:hover {
+    text-decoration: underline;
 }

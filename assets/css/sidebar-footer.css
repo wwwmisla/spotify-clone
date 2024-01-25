@@ -1,7 +1,7 @@
 /* Geral */
 body {
     background-color: var(--color-black);
-    font-family: var(--font);
+    font-family: var(--font-dm-sans);
 }
 
 ::-webkit-scrollbar {
@@ -334,4 +334,8 @@ svg {
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
+}
+
+#artistList {
+    display: none;
 }
