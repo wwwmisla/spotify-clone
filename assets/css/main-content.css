@@ -3,19 +3,11 @@ body {
     overflow: hidden;
 }
 
-/* main {
-    padding-top: 2px;
-    margin-left: 312px;
-    max-width: 80vw;
-    height: 100vh;
-} */
-
 .main-container {
     padding-top: 2px;
     margin-left: 312px;
     max-width: 80vw;
     height: 100vh;
-    z-index: 1;
 }
 
 .main-container::-webkit-scrollbar-thumb {
@@ -101,7 +93,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     outline: none;
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
     cursor: pointer;
 }
 
@@ -145,8 +137,8 @@ body {
     background: linear-gradient(var(--color-black-three), var(--color-black-two) 100%);
     overflow: auto;
     margin: -20px 10px 0 10px;
-    position: relative;
-    z-index: -1;
+    /* position: relative;
+    z-index: -1; */
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     color: var(--color-white);
@@ -163,19 +155,41 @@ body {
     align-items: center;
 }
 
-.playlist #greeting {
-    font-size: 32px;
-    font-weight: 700;
+.playlist .playlist-content-text {
+    display: flex;
+    flex-direction: column;
 }
 
-.playlist .session {
+#greeting {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#span-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+#span-subtitle:hover {
+    text-decoration: underline;
+}
+
+.session {
     color: var(--color-gray);
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
+    transition: .4s ease-in-out;
+    align-self: flex-start;
+    margin-top: 5px;
 }
 
-.playlist .session:hover {
+.session:hover {
     text-decoration: underline;
 }
+
