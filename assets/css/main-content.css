@@ -244,62 +244,226 @@ body {
     background-color: rgb(0, 100, 80);
 }
 
+.cards .card1:hover {
+    background-image: url('../img/playlist/1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card1:hover span, .cards .card1:hover img) {
+    display: none;
+}
+
 .card2 {
     background-color: rgb(132, 0, 231);
+}
+
+.cards .card2:hover {
+    background-image: url('../img/playlist/2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card2:hover span, .cards .card2:hover img) {
+    display: none;
 }
 
 .card3 {
     background: rgb(30, 50, 100);
 }
 
+.cards .card3:hover {
+    background-image: url('../img/playlist/3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card3:hover span, .cards .card3:hover img) {
+    display: none;
+}
+
 .card4 {
     background: rgb(140, 25, 50);
+}
+
+.cards .card4:hover {
+    background-image: url('../img/playlist/4.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card4:hover span, .cards .card4:hover img) {
+    display: none;
 }
 
 .card5 {
     background: rgb(232, 17, 91);
 }
 
+.cards .card5:hover {
+    background-image: url('../img/playlist/5.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card5:hover span, .cards .card5:hover img) {
+    display: none;
+}
+
 .card6 {
     background: rgb(83, 122, 161);
+}
+
+.cards .card6:hover {
+    background-image: url('../img/playlist/6.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card6:hover span, .cards .card6:hover img) {
+    display: none;
 }
 
 .card7 {
     background: rgb(142, 102, 172);
 }
 
+.cards .card7:hover {
+    background-image: url('../img/playlist/7.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card7:hover span, .cards .card7:hover img) {
+    display: none;
+}
+
 .card8 {
     background: rgb(20, 138, 8);
+}
+
+.cards .card8:hover {
+    background-image: url('../img/playlist/8.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card8:hover span, .cards .card8:hover img) {
+    display: none;
 }
 
 .card9 {
     background: rgb(30, 50, 100);
 }
 
+.cards .card9:hover {
+    background-image: url('../img/playlist/9.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card9:hover span, .cards .card9:hover img) {
+    display: none;
+}
+
 .card10 {
     background: rgb(233, 20, 41);
+}
+
+.cards .card10:hover {
+    background-image: url('../img/playlist/10.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card10:hover span, .cards .card10:hover img) {
+    display: none;
 }
 
 .card11 {
     background: rgb(80, 55, 80);
 }
 
+.cards .card11:hover {
+    background-image: url('../img/playlist/11.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card11:hover span, .cards .card11:hover img) {
+    display: none;
+}
+
 .card12 {
     background: rgb(216, 64, 0);
+}
+
+.cards .card12:hover {
+    background-image: url('../img/playlist/12.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card12:hover span, .cards .card12:hover img) {
+    display: none;
 }
 
 .card13 {
     background: rgb(186, 93, 7);
 }
 
+.cards .card13:hover {
+    background-image: url('../img/playlist/13.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card13:hover span, .cards .card13:hover img) {
+    display: none;
+}
+
 .card14 {
     background: rgb(0, 30, 80);
+}
+
+.cards .card14:hover {
+    background-image: url('../img/playlist/14.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card14:hover span, .cards .card14:hover img) {
+    display: none;
 }
 
 .card15 {
     background: rgb(60, 30, 80);
 }
 
+.cards .card15:hover {
+    background-image: url('../img/playlist/15.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:is(.cards .card15:hover span, .cards .card15:hover img) {
+    display: none;
+}
 /* Fim Colors Cards */
 
 .offer-list-item img {
@@ -309,34 +473,29 @@ body {
     height: auto;
     width: 107px;
     transform: rotate(25deg) translate(18%, -2%);
-}
-
-.offer-list-item img:hover {
-    width: 200px;
-    height: 200px;
-    transform: none;
+    transition: 0.4s ease-in-out;
 }
 
 /* Card Artista */
-.artist {
+/* .artist {
     --column-count: 5;
     --grid-gap: 24px;
     --min-container-width: 372px;
-}
+} */
 
 .hidden {
     display: none;
 }
 
 .grid-container {
-    grid-gap: 24px;
     display: grid;
+    grid-gap: 24px;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     min-width: 767px;
 }
 
 .artist-card {
-    background: #181818;
+    background: var(--color-black-four);
     border-radius: 8px;
     -ms-flex: 1;
     flex: 1;
@@ -348,7 +507,7 @@ body {
 }
 
 .artist-card:hover {
-    background-color: #252525;
+    background-color: var(--color-black-five);
 }
 
 .card-img {
