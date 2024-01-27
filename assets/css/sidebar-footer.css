@@ -334,4 +334,9 @@ svg {
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.disclaimer-premium button:hover {
+    transform: scale(1.05);
 }

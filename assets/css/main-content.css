@@ -169,6 +169,7 @@ body {
 #span-subtitle {
     font-size: 22px;
     font-weight: 600;
+    margin-bottom: 30px;
     color: var(--color-white);
     text-decoration: none;
     transition: 0.4s ease-in-out;
@@ -195,8 +196,6 @@ body {
 
 /* Scroll */
 .offer-scroll-container {
-    max-height: 43vh;
-    margin: 24px;
     overflow-y: auto;
 }
 
@@ -477,11 +476,11 @@ body {
 }
 
 /* Card Artista */
-/* .artist {
+.artist {
     --column-count: 5;
     --grid-gap: 24px;
     --min-container-width: 372px;
-} */
+}
 
 .hidden {
     display: none;
@@ -502,7 +501,7 @@ body {
     isolation: isolate;
     padding: 16px;
     position: relative;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
     width: 100%;
 }
 
@@ -586,3 +585,77 @@ body {
     padding: 20px 40px;
 }
 /* Fim Card Artista */
+/* Main Footer */
+.main-footer {
+    margin: 24px;
+}
+
+.main-footer-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+:is(.main-footer-information .main-footer-nav, .main-footer-information .social-links-footer) {
+    margin-top: 50px;
+}
+
+.main-footer-information .main-footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.main-footer-information .main-footer-nav ul li {
+    margin: 10px 0 10px 0;
+}
+
+.main-footer-information .main-footer-nav span {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-container .main-footer-nav ul li a {
+    color: var(--color-gray);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    gap: 100px;
+}
+
+.main-container .main-footer-nav ul li a:hover {
+    color: rgb(219, 219, 219);
+    text-decoration: underline;
+}
+
+.social-links-footer a {
+    text-decoration: none;
+}
+
+.social-links-footer a svg {
+    fill: var(--color-white);
+    padding: 10px;
+    border-radius: 16px;
+    margin-left: 5px;
+    background-color: rgba(80, 80, 80, 0.384);
+    transition: 0.4s ease-in-out;
+}
+
+.social-links-footer a svg:hover {
+    background-color: rgba(80, 80, 80, 0.836);
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid rgb(32, 32, 32);
+}
+
+.main-footer div p {
+    color: var(--color-gray-two);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
