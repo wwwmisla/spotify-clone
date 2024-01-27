@@ -1,5 +1,27 @@
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 1075px) {
     .offer-list-item {
         grid-template-columns: 1fr 1fr;
     }
+
+    .sections {
+        height: 35px;
+    }
+
+    .playlist-container {
+        height: 455px;
+    }
+
+    :is(.disclaimer-premium, .header-search) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .offer-list-item {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
 }
