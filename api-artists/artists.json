@@ -41,6 +41,66 @@
             "name": "Caetano Veloso",
             "genre": "MPB",
             "urlImg": "https://i.scdn.co/image/ab67616100005174e98de50f36cf1aa4bf047757"
+        },
+        {
+            "id": 8,
+            "name": "Taylor Swift",
+            "genre": "Pop",
+            "urlImg": "https://i.scdn.co/image/ab67616100005174859e4c14fa59296c8649e0e4"
+        },
+        {
+            "id": 9,
+            "name": "Bad Bunny",
+            "genre": "Pop Latino",
+            "urlImg": "https://i.scdn.co/image/ab676161000051749ad50e478a469448c6f369df"
+        }, 
+        {
+            "id": 10,
+            "name": "The Weeknd",
+            "genre": "R&B/Soul",
+            "urlImg": "https://i.scdn.co/image/ab67616100005174214f3cf1cbe7139c1e26ffbb"
+        }, 
+        {
+            "id": 11,
+            "name": "Drake",
+            "genre": "R&B/Hip Hop",
+            "urlImg": "https://i.scdn.co/image/ab676161000051744293385d324db8558179afd9"
+        }, 
+        {
+            "id": 12,
+            "name": "Peso Pluma",
+            "genre": "Regional Mexicano",
+            "urlImg": "https://i.scdn.co/image/ab67616100005174730e71d60e047f1061a9e697"
+        }, 
+        {
+            "id": 13,
+            "name": "Ana Castela",
+            "genre": "Sertanejo",
+            "urlImg": "https://i.scdn.co/image/ab6761610000517426abde7ba3cfdfb8c1900baf"
+        },
+        {
+            "id": 14,
+            "name": "Henrique e Juliano",
+            "genre": "Sertanejo",
+            "urlImg": "https://i.scdn.co/image/ab67616100005174b713c619cc12ca1866136419"
+        },
+        {
+            "id": 15,
+            "name": "MC Ryan SP",
+            "genre": "Funk",
+            "urlImg": "https://i.scdn.co/image/ab67616100005174ac2f1e78e2d7fc16239728e7"
+        },
+        {
+            "id": 16,
+            "name": "Marília Mendonça",
+            "genre": "Sertanejo",
+            "urlImg": "https://i.scdn.co/image/ab67616100005174ffaebdbc972967729f688e25"
+        },
+        {
+            "id": 17,
+            "name": "Jorge Mateus",
+            "genre": "Sertanejo",
+            "urlImg": "https://i.scdn.co/image/ab676161000051744519582131dc53d9f2c86803"
         }
     ]
 }
