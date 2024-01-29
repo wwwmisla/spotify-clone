@@ -2,6 +2,9 @@
 
 ## Aula 01: Revisão: HTML, CSS e JS na Prática
 
+### REVISÃO: HTML, CSS E JS NA PRÁTICA
+PARTICIPE E VÁ MAIS FUNDO
+
 Boas-vindas! Chegou a hora de mergulhar na Imersão Front-End e dar um novo passo na sua carreira!
 
 ### Introdução
